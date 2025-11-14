@@ -1,10 +1,13 @@
-- 👋 Hi, I’m @praveen-solanki
-- 👀 I’m interested in Artificial Intelligence & Machine Learning
-- 🌱 I’m currently learning in Btech(3rd).
-- 💞️ I’m looking for internships ...
-- 📫 Here is my mail id PraveenTheSoftwareEngineer@gmail.com...
+- Praveen Solanki | AI/ML enthusiast and software engineer
+- MTech student passionate about applying ML to real-world problems
+- Focus: computer vision, AI/ML
+ 
+- Tech: Python, PyTorch/TensorFlow, data preprocessing, model training/evaluation
+- Contact: PraveenTheSoftwareEngineer@gmail.com
 
-<!---
-praveen-solanki/praveen-solanki is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Projects (pin-ready notes)
+
+- TB-Bacilli-Detection-via-Super-Resolution-Segmentation — TB bacilli detection with SR + segmentation (EDSR, UNet, LR-HR)
+- Brain-2-Text — Brain-related NLP/vision tasks
+- Adaptive-N-Back-Task — Web-based adaptive cognitive task
+- Renal-Tumor-Detection-in-Medical-Imaging — Medical imaging tumor detection

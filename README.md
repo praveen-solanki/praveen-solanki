@@ -3,17 +3,17 @@
   AI/ML Engineer  ·  IIT Mandi M.Tech CSE  ·  Intern @ Bosch Global Software Technologies
 </p>
 <p align="center">
-  Building production-grade AI systems in Computer Vision, RAG/LLMs, and Medical Imaging.
+  Building production-grade AI systems in RAG/LLMs, Computer Vision, and Medical Imaging.
 </p>
 
 ---
 
 ### What I'm currently building
 
+- **Automotive RAG @ Bosch** — Hybrid + Vectorless RAG for AUTOSAR documents
+  · BGE-M3 · Qdrant · RRF fusion · cross-encoder reranking · 3-tier RAGAS + RAGChecker evaluation with 95% CI
 - **ADASVision.ai** — Real-time ADAS perception: YOLO11m + ResNet-18 + HSV detection
   · 185.5 FPS (ONNX Runtime) · mAP@0.5 = 0.554 on 19,975-frame BDD100K sequences
-- **Automotive RAG @ Bosch** — Hybrid + Vectorless RAG for AUTOSAR documents
-  · BGE-M3 · Qdrant · RRF fusion · 3-tier evaluation (RAGAS + RAGChecker + 95% CI bootstrap)
 - **TBVision.ai** — SwinIR → SegFormer-B4 · PSNR 40.39 dB · Dice 0.8956
   · Deployed on Hugging Face Spaces
 
@@ -33,11 +33,12 @@
 
 | Project | Description | Key metrics |
 |---|---|---|
-| [ADASVision.ai](https://github.com/praveen-solanki/ADASVision.ai) | Real-time multi-model ADAS inference | 185.5 FPS · mAP@0.5 = 0.554 |
-| [TBVision.ai](https://github.com/praveen-solanki/TBVision.ai) | TB bacilli detection via SR + Transformer seg | PSNR 40.39 dB · Dice 0.8956 |
-| [MindWriter.ai](https://github.com/praveen-solanki/MindWriter.ai) | EEG-to-text (CNN + Transformer + GPT-2) | BLEU-1 ~15% on ZuCo 2.0 |
-| [Renal-Tumor-Detection](https://github.com/praveen-solanki/Renal-Tumor-Detection-in-Medical-Imaging) | Renal tumor detection in CT imaging | — |
-| [Adaptive-N-Back-Task](https://github.com/praveen-solanki/Adaptive-N-Back-Task) | Adaptive cognitive assessment tool | — |
+| Automotive RAG @ Bosch | Hybrid + Vectorless RAG for AUTOSAR docs · BGE-M3 · Qdrant · RRF · 3-tier eval | 95% CI bootstrap · RAGAS + RAGChecker |
+| [ADASVision.ai](https://github.com/praveen-solanki/ADASVision.ai) | Real-time multi-model ADAS perception pipeline | 185.5 FPS · mAP@0.5 = 0.554 |
+| [TBVision.ai](https://github.com/praveen-solanki/TBVision.ai) | TB bacilli detection via super-resolution + Transformer seg | PSNR 40.39 dB · Dice 0.8956 |
+| [MindWriter.ai](https://github.com/praveen-solanki/MindWriter.ai) | EEG-to-text neural decoding (CNN + Transformer + GPT-2) | BLEU-1 ~15% · BLEU-4 ~6% on ZuCo 2.0 |
+| [Renal-Tumor-Detection](https://github.com/praveen-solanki/Renal-Tumor-Detection-in-Medical-Imaging) | Renal tumor detection in CT medical imaging | — |
+| [Adaptive-N-Back-Task](https://github.com/praveen-solanki/Adaptive-N-Back-Task) | Adaptive cognitive assessment (N-back paradigm) | — |
 
 ---
 

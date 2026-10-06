@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="What I build">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+<linearGradient id="g" x1="0" x2="1"><stop stop-color="#58a6ff"/><stop offset=".35" stop-color="#7ee787"/><stop offset=".7" stop-color="#a371f7"/><stop offset="1" stop-color="#f2cc60"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+.s{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+@keyframes dash{to{stroke-dashoffset:-180}} @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1;filter:url(#glow)}} @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}} @keyframes fade{0%,20%{opacity:.25}35%,60%{opacity:1}75%,100%{opacity:.25}} @keyframes sweep{from{transform:translateX(-400px)}to{transform:translateX(1600px)}} @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-620px)}} @keyframes blink{50%{opacity:0}}
+</style>
+</defs>
+<rect width="1200" height="420" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#30363d"/>
+
+<text x="58" y="68" class="s" font-size="30" font-weight="760" fill="#f0f6fc">WHAT I BUILD</text>
+<text x="58" y="101" class="m" font-size="14" fill="#8b949e">systems around context, reasoning, safety and retrieval</text>
+<g transform="translate(600 235)">
+  <circle r="60" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/><circle r="95" fill="none" stroke="#30363d"/><circle r="160" fill="none" stroke="#30363d"/><circle r="220" fill="none" stroke="#21262d"/>
+  <text text-anchor="middle" y="-5" class="s" font-size="18" font-weight="700" fill="#f0f6fc">AI SYSTEMS</text><text text-anchor="middle" y="20" class="m" font-size="12" fill="#58a6ff">production-first</text>
+  <g style="animation:float 5s ease-in-out infinite"><circle cx="-185" cy="-70" r="45" fill="#0d1117" stroke="#7ee787"/><text x="-185" y="-66" text-anchor="middle" class="m" font-size="13" fill="#7ee787">GRAPH</text></g>
+  <g style="animation:float 6s ease-in-out .8s infinite"><circle cx="175" cy="-95" r="45" fill="#0d1117" stroke="#a371f7"/><text x="175" y="-91" text-anchor="middle" class="m" font-size="13" fill="#a371f7">AGENTS</text></g>
+  <g style="animation:float 7s ease-in-out 1.6s infinite"><circle cx="-155" cy="135" r="45" fill="#0d1117" stroke="#58a6ff"/><text x="-155" y="139" text-anchor="middle" class="m" font-size="13" fill="#58a6ff">RAG</text></g>
+  <g style="animation:float 5.5s ease-in-out 2.1s infinite"><circle cx="180" cy="125" r="45" fill="#0d1117" stroke="#f2cc60"/><text x="180" y="129" text-anchor="middle" class="m" font-size="13" fill="#f2cc60">MEMORY</text></g>
+  <path d="M-155-55 Q0-145 155-78 M-135 115 Q0 185 160 105 M-145-35 Q-65 20 -45 20 M45 15 Q105 50 150 95" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="8 12" style="animation:dash 6s linear infinite"/>
+</g>
+<g class="m" font-size="13" fill="#c9d1d9">
+<text x="70" y="175">• entity / identity resolution</text><text x="70" y="202">• GraphRAG + multi-hop traversal</text><text x="70" y="229">• scoped context + personalization</text>
+<text x="890" y="175">• multi-agent orchestration</text><text x="890" y="202">• guardrails + policy</text><text x="890" y="229">• evaluation + reliability</text>
+</g>
+</svg>

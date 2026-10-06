@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">About Praveen Solanki</title>
+  <desc id="desc">Animated profile card highlighting current work, focus areas, background and engineering mindset.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="45%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="35%" stop-color="#7ee787"/>
+      <stop offset="68%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#f2cc60"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .sans{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+      .card{fill:#0d1117;stroke:#30363d;stroke-width:1.3}
+      .card1{animation:cardPulse 8s ease-in-out infinite}
+      .card2{animation:cardPulse 8s ease-in-out 2s infinite}
+      .card3{animation:cardPulse 8s ease-in-out 4s infinite}
+      .card4{animation:cardPulse 8s ease-in-out 6s infinite}
+      .dot1{animation:pulse 8s ease-in-out infinite}
+      .dot2{animation:pulse 8s ease-in-out 2s infinite}
+      .dot3{animation:pulse 8s ease-in-out 4s infinite}
+      .dot4{animation:pulse 8s ease-in-out 6s infinite}
+      .dash{stroke-dasharray:10 14;animation:dash 7s linear infinite}
+      .float1{animation:float 6s ease-in-out infinite}
+      .float2{animation:float 7s ease-in-out 1.2s infinite}
+      .float3{animation:float 8s ease-in-out 2.4s infinite}
+      .shine{animation:shine 7s linear infinite}
+      .blink{animation:blink 1s steps(2,end) infinite}
+      @keyframes cardPulse{0%,18%,100%{stroke:#30363d;filter:none}8%{stroke:#58a6ff;filter:url(#glow)}}
+      @keyframes pulse{0%,18%,100%{opacity:.38}8%{opacity:1;filter:url(#glow)}}
+      @keyframes dash{to{stroke-dashoffset:-144}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes shine{0%{transform:translateX(-420px)}100%{transform:translateX(1500px)}}
+      @keyframes blink{50%{opacity:0}}
+    </style>
+  </defs>
+  <rect width="1200" height="470" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="468" rx="23" fill="none" stroke="#30363d"/>
+
+  <g opacity=".12">
+    <circle cx="90" cy="84" r="3" fill="#58a6ff" class="float1"/>
+    <circle cx="1110" cy="84" r="3" fill="#a371f7" class="float2"/>
+    <circle cx="1030" cy="405" r="3" fill="#7ee787" class="float3"/>
+    <circle cx="170" cy="405" r="3" fill="#f2cc60" class="float2"/>
+    <path d="M70 375 C230 300 260 420 430 350 S720 300 875 370 S1070 410 1140 335" fill="none" stroke="#58a6ff"/>
+  </g>
+
+  <text x="58" y="72" class="sans" font-size="32" font-weight="750" fill="#f0f6fc">ABOUT ME</text>
+  <rect x="58" y="88" width="170" height="4" rx="2" fill="url(#line)"/>
+  <text x="58" y="126" class="sans" font-size="19" fill="#c9d1d9">I build the engineering layer between a strong AI demo and a reliable production system.</text>
+  <text x="58" y="156" class="mono" font-size="15" fill="#8b949e">signal → structure → reasoning → reliability<tspan class="blink" fill="#58a6ff">_</tspan></text>
+
+  <path d="M134 234 H382 H630 H878 H1066" fill="none" stroke="url(#line)" stroke-width="2.4" class="dash" opacity=".9"/>
+
+  <g class="dot1"><circle cx="134" cy="234" r="8" fill="#58a6ff"/></g>
+  <g class="dot2"><circle cx="382" cy="234" r="8" fill="#7ee787"/></g>
+  <g class="dot3"><circle cx="630" cy="234" r="8" fill="#a371f7"/></g>
+  <g class="dot4"><circle cx="878" cy="234" r="8" fill="#f2cc60"/></g>
+
+  <g class="card1">
+    <rect x="58" y="266" width="248" height="142" rx="18" class="card"/>
+    <text x="80" y="298" class="mono" font-size="13" fill="#58a6ff">01 / CURRENT</text>
+    <text x="80" y="331" class="sans" font-size="20" font-weight="700" fill="#f0f6fc">Simpplr</text>
+    <text x="80" y="359" class="sans" font-size="15" fill="#c9d1d9">Enterprise AI systems</text>
+    <text x="80" y="383" class="sans" font-size="14" fill="#8b949e">graphs · retrieval · agents</text>
+  </g>
+
+  <g class="card2">
+    <rect x="326" y="266" width="248" height="142" rx="18" class="card"/>
+    <text x="348" y="298" class="mono" font-size="13" fill="#7ee787">02 / FOCUS</text>
+    <text x="348" y="331" class="sans" font-size="18" font-weight="700" fill="#f0f6fc">GraphRAG · Memory</text>
+    <text x="348" y="359" class="sans" font-size="15" fill="#c9d1d9">Knowledge Graphs · Agents</text>
+    <text x="348" y="383" class="sans" font-size="14" fill="#8b949e">guardrails · context systems</text>
+  </g>
+
+  <g class="card3">
+    <rect x="594" y="266" width="248" height="142" rx="18" class="card"/>
+    <text x="616" y="298" class="mono" font-size="13" fill="#a371f7">03 / BACKGROUND</text>
+    <text x="616" y="331" class="sans" font-size="18" font-weight="700" fill="#f0f6fc">M.Tech CSE · IIT Mandi</text>
+    <text x="616" y="359" class="sans" font-size="15" fill="#c9d1d9">Previously @ Bosch</text>
+    <text x="616" y="383" class="sans" font-size="14" fill="#8b949e">enterprise RAG · applied AI</text>
+  </g>
+
+  <g class="card4">
+    <rect x="862" y="266" width="280" height="142" rx="18" class="card"/>
+    <text x="884" y="298" class="mono" font-size="13" fill="#f2cc60">04 / MINDSET</text>
+    <text x="884" y="331" class="sans" font-size="18" font-weight="700" fill="#f0f6fc">Research → Production</text>
+    <text x="884" y="359" class="sans" font-size="15" fill="#c9d1d9">benchmark · debug · operate</text>
+    <text x="884" y="383" class="sans" font-size="14" fill="#8b949e">measure what matters</text>
+  </g>
+
+  <g class="shine" opacity=".10">
+    <rect x="-300" y="0" width="150" height="470" transform="skewX(-20)" fill="url(#line)"/>
+  </g>
+</svg>

@@ -38,6 +38,23 @@
   I work on the engineering between a good AI demo and a reliable production system — retrieval, graphs, context, memory, safety, evaluation, and failure handling.
 </p>
 
+<details>
+<summary><strong>More about what I focus on</strong></summary>
+<br>
+
+I am most interested in systems where **model quality is only one part of the problem**. The harder work is often deciding what context reaches the model, how knowledge is represented, how identities and relationships stay consistent, and how the system behaves when infrastructure is incomplete or wrong.
+
+**Right now, my work is centered around:**
+- enterprise Knowledge Graphs and GraphRAG
+- agentic systems and policy / guardrail infrastructure
+- scoped memory, personalization, and context lifecycle
+- retrieval quality, evaluation, latency, and reliability
+- turning research ideas into systems that can be benchmarked, debugged, and operated
+
+**Background:** M.Tech CSE from IIT Mandi, currently building enterprise AI systems at Simpplr, with previous applied AI / enterprise RAG work at Bosch Global Software Technologies.
+
+</details>
+
 ---
 
 ## What I build
@@ -46,23 +63,31 @@
   <img src="./assets/what-i-build.svg" width="100%" alt="What I build — animated AI systems map" />
 </p>
 
+<p align="center">
+  My work sits at the intersection of <strong>knowledge, retrieval, reasoning, memory, and production reliability</strong>. The orbit above represents the major system layers I repeatedly work across rather than isolated tools or models.
+</p>
+
 <details>
 <summary><strong>Explore the systems behind the orbit</strong></summary>
 <br>
 
-**Knowledge & Context Systems**
-- Knowledge Graph construction
-- Entity / identity resolution
-- GraphRAG & multi-hop retrieval
-- Context & memory architectures
-- Temporal and scoped personalization
+### Knowledge & Context Systems
+These systems decide **what the AI knows, how that knowledge is represented, and how the correct context is found**.
 
-**Agentic & LLM Systems**
-- Multi-agent orchestration
-- RAG pipelines & evaluation
-- Dynamic guardrails / policies
-- LLM routing & inference
-- Failure-aware production workflows
+- **Knowledge Graph construction** — extracting entities, relationships, evidence, and provenance from enterprise data.
+- **Entity / identity resolution** — determining when records refer to the same real-world person, object, or concept.
+- **GraphRAG & multi-hop retrieval** — combining semantic retrieval with relationship traversal for questions that require more than one document or entity.
+- **Context & memory architectures** — deciding what should be remembered, at which scope, and for how long.
+- **Temporal / scoped personalization** — separating current, historical, session-level, team-level, and persistent information.
+
+### Agentic & LLM Systems
+These systems decide **how models act, which tools and policies they use, and how their outputs stay measurable and reliable**.
+
+- **Multi-agent orchestration** — coordinating specialized agents and tool calls around a larger objective.
+- **RAG pipelines & evaluation** — retrieval, reranking, grounded generation, and independent quality measurement.
+- **Dynamic guardrails / policies** — applying tenant- and agent-specific safety behavior at runtime.
+- **LLM routing & inference** — selecting and serving models according to workload, latency, and configuration.
+- **Failure-aware workflows** — handling retries, truncation, rate limits, partial results, and unavailable dependencies.
 
 </details>
 
@@ -75,23 +100,52 @@
 </p>
 
 <p align="center">
-  I contribute to private enterprise AI systems; this is a public-safe summary of the engineering themes.
+  I contribute to private enterprise AI systems across <strong>graph ingestion, retrieval, agent safety, memory, and production reliability</strong>. The flow above shows how those areas connect from knowledge ingestion to final user-facing AI behavior.
 </p>
 
 <details>
 <summary><strong>Open engineering highlights</strong></summary>
 <br>
 
-**Knowledge Graph & GraphRAG** — entity canonicalization, person resolution, incremental ingestion, cross-graph ranking, relationship enrichment, and multi-hop retrieval.
+### Knowledge Graph & GraphRAG
+Focused on making enterprise knowledge **consistent, connected, and retrievable** across large corpora.
 
-**Agent Safety Infrastructure** — tenant-aware guardrails, Redis-backed policy retrieval, agent-specific policy application, and modular prompt-policy composition.
+- corpus-level entity canonicalization and evidence preservation
+- person / identity resolution across bulk and incremental ingestion
+- relationship enrichment and multi-hop graph traversal
+- cross-graph ranking, temporal handling, and duplicate reduction
+- incremental processing that resolves new information against existing graph state
 
-**Memory & Personalization** — scoped memory, reconciliation, authorization, provenance, lifecycle decisions, and tenant-aware model routing.
+### Agent Safety Infrastructure
+Worked on making safety behavior **configurable at runtime instead of hardcoded inside prompts**.
 
-**Production Reliability** — checkpointing, concurrency, large-payload delivery, Kafka/WebSocket observability, batching, fallbacks, and graceful degradation.
+- tenant-aware guardrail categories
+- Redis-backed policy retrieval with controlled fallbacks
+- agent-specific guardrail application
+- modular separation between policies and core agent prompts
+- regression coverage for tenant switches, mappings, parsing, and fallback behavior
+
+### Memory & Personalization
+Worked on how user and team context is **stored, reconciled, authorized, and updated over time**.
+
+- scoped memory writes and authorization checks
+- add / update / delete / skip reconciliation decisions
+- provenance and lifecycle handling
+- distinguishing recurring information from one-time events
+- tenant-aware model routing with bounded fallback behavior
+
+### Production Reliability
+Worked on the infrastructure around the AI path so failures are **visible, bounded, and recoverable**.
+
+- batched and sharded checkpoint persistence
+- request-size, token, timeout, and throttling controls
+- bounded concurrency and memory-aware processing
+- large WebSocket payload delivery
+- Kafka / background-task observability
+- graceful degradation when graph or supporting infrastructure is unavailable
 
 <p align="center">
-  <a href="./docs/engineering-at-simpplr.md"><strong>Read the detailed engineering summary →</strong></a>
+  <a href="./docs/engineering-at-simpplr.md"><strong>Read the full public-safe engineering summary →</strong></a>
 </p>
 
 </details>
@@ -104,6 +158,10 @@
   <img src="./assets/flagship-projects.svg" width="100%" alt="Flagship projects — animated project spotlight" />
 </p>
 
+<p align="center">
+  These projects were selected because each demonstrates a different part of my engineering range: <strong>agentic graph intelligence, rigorous RAG evaluation, real-time computer vision, and graph-based software intelligence</strong>.
+</p>
+
 <table>
 <tr>
 <td align="center" width="25%"><a href="https://github.com/praveen-solanki/AgenticMindGraph.ai"><strong>AgenticMindGraph.ai</strong></a><br><sub>Graph + Agentic Reasoning</sub></td>
@@ -114,23 +172,70 @@
 </table>
 
 <details>
-<summary><strong>Open project evidence & metrics</strong></summary>
+<summary><strong>01 — AgenticMindGraph.ai · graph + autonomous reasoning</strong></summary>
 <br>
 
-**01 / AgenticMindGraph.ai**  
-Autonomous research intelligence over technical specifications using Knowledge Graphs + agentic reasoning.  
-`Knowledge Graphs` · `Neo4j` · `LLMs` · `Multi-Agent Systems` · `vLLM` · `BGE-M3`
+**Problem:** Technical specifications contain relationships, dependencies, contradictions, and evolving knowledge that flat document search cannot represent well.
 
-**02 / RAG Full Pipeline**  
-End-to-end AUTOSAR intelligence system comparing Hybrid Vector RAG vs Vectorless hierarchical retrieval.  
-103 specification PDFs · 4,500+ pages · 1,000+ validated QA pairs · shared generation/evaluation pipeline.
+**What I built:** An end-to-end system that converts technical PDFs into a Knowledge Graph and runs specialized agents for reasoning, conflict detection, evolution tracking, synthesis, and system monitoring.
 
-**03 / ADAS Perception Pipeline**  
-Real-time multi-model perception for vehicles, pedestrians, traffic signs, and traffic-light state.  
-**185.5 FPS** ONNX Runtime GPU · **mAP@0.5 = 0.554** · **97.82%** GTSRB sign classification accuracy.
+**Engineering signal:** graph construction + agent orchestration + knowledge evolution + evaluation in the same system.
 
-**04 / TestForge.ai / Unified Knowledge Graph**  
-Graph-based requirements-to-code traceability with coverage analysis, semantic drift detection, natural-language-to-Cypher querying, and code-change impact analysis.
+**Stack:** `Neo4j` · `LLMs` · `vLLM` · `BGE-M3` · `Multi-Agent Systems`
+
+**[Explore the repository →](https://github.com/praveen-solanki/AgenticMindGraph.ai)**
+
+</details>
+
+<details>
+<summary><strong>02 — RAG Full Pipeline · retrieval research + evaluation</strong></summary>
+<br>
+
+**Problem:** Complex engineering documentation requires both semantic retrieval and precise structural navigation; a single retrieval paradigm is not always enough.
+
+**What I built:** A complete AUTOSAR intelligence pipeline comparing **Hybrid Vector RAG** with **Vectorless hierarchical retrieval** under a shared generation and evaluation setup.
+
+**Evidence:** 103 specification PDFs · 4,500+ pages · 1,000+ validated QA pairs.
+
+**Engineering signal:** dataset construction, retrieval benchmarking, controlled generation, evaluation, reproducibility, and research comparison rather than only a chatbot demo.
+
+**Stack:** `BGE-M3` · `Qdrant` · `RRF` · `RAGAS` · `RAGChecker` · `vLLM`
+
+**[Explore the repository →](https://github.com/praveen-solanki/RAG-Full-Pipeline)**
+
+</details>
+
+<details>
+<summary><strong>03 — ADAS Perception Pipeline · real-time CV + performance engineering</strong></summary>
+<br>
+
+**Problem:** Real-time road perception requires multiple models to run together while preserving useful throughput and measurable accuracy.
+
+**What I built:** A multi-model perception pipeline for vehicles, pedestrians, traffic signs, and traffic-light state with reproducible evaluation and backend benchmarking.
+
+**Evidence:** **185.5 FPS** ONNX Runtime GPU · **mAP@0.5 = 0.554** · **97.82%** GTSRB traffic-sign accuracy.
+
+**Engineering signal:** model integration, latency measurement, backend comparison, threshold analysis, reproducible evaluation, and documented failure cases.
+
+**Stack:** `YOLO11m` · `ResNet-18` · `OpenCV` · `ONNX Runtime` · `BDD100K`
+
+**[Explore the repository →](https://github.com/praveen-solanki/ADAS-Perception-Pipeline)**
+
+</details>
+
+<details>
+<summary><strong>04 — TestForge.ai · requirements ↔ code intelligence</strong></summary>
+<br>
+
+**Problem:** Software requirements and implementation often drift apart, making traceability and change-impact analysis difficult.
+
+**What I built:** A Unified Knowledge Graph connecting technical specifications with implementation details and exposing coverage, semantic drift, ghost requirements, natural-language-to-Cypher querying, and code-change impact analysis.
+
+**Engineering signal:** graph modeling + AST/code analysis + LLM reasoning + backend APIs + interactive visualization.
+
+**Stack:** `Neo4j` · `FastAPI` · `React` · `vLLM` · `Tree-sitter` · `Embeddings`
+
+**[Explore the repository →](https://github.com/praveen-solanki/TestForge.ai-Automated-Test-Generation-Requirements-Traceability-System)**
 
 </details>
 
@@ -155,6 +260,10 @@ Graph-based requirements-to-code traceability with coverage analysis, semantic d
   <img src="./assets/toolbox.svg" width="100%" alt="Animated AI engineering toolbox" />
 </p>
 
+<p align="center">
+  I use tools as parts of a system, not as a checklist. The stack below reflects what I use across <strong>modeling, retrieval, graphs, backend infrastructure, evaluation, and deployment</strong>.
+</p>
+
 <details>
 <summary><strong>Open the stack by category</strong></summary>
 <br>
@@ -175,6 +284,10 @@ Graph-based requirements-to-code traceability with coverage analysis, semantic d
 
 <p align="center">
   <img src="./assets/engineering-thinking.svg" width="100%" alt="Animated AI engineering principles waveform" />
+</p>
+
+<p align="center">
+  The waveform represents four principles I repeatedly use when designing AI systems: <strong>retrieve the right evidence, structure the context, design for failure, and measure the system independently</strong>.
 </p>
 
 <details>
@@ -209,6 +322,41 @@ I prefer measurable systems: benchmark retrieval separately, freeze generation w
   <img src="./assets/experience-timeline-v2.svg" width="100%" alt="Animated experience and education timeline" />
 </p>
 
+<p align="center">
+  My path has moved from academic AI research into applied enterprise RAG and now into broader production AI infrastructure spanning graphs, agents, retrieval, memory, and reliability.
+</p>
+
+<details>
+<summary><strong>Open the timeline in detail</strong></summary>
+<br>
+
+### Simpplr · 2026 — now
+**Associate Data Scientist / AI-ML Engineering**
+
+Working on enterprise AI systems across:
+- Knowledge Graph ingestion and entity resolution
+- GraphRAG and multi-hop enterprise retrieval
+- agent safety / guardrail infrastructure
+- memory and personalization systems
+- LLM infrastructure, reliability, and observability
+
+### Bosch Global Software Technologies · 2026
+**Applied AI / Enterprise RAG**
+
+Worked on RAG for complex AUTOSAR engineering documentation, including:
+- document extraction and structured chunking
+- Hybrid RAG using dense + sparse retrieval
+- Vectorless / hierarchical retrieval research
+- retrieval and generation evaluation
+- benchmarking and reproducibility
+
+### IIT Mandi · 2024 — 2026
+**M.Tech — Computer Science & Engineering**
+
+Built a stronger foundation in machine learning, deep learning, NLP, computer vision, and research-oriented experimentation that later carried into production AI work.
+
+</details>
+
 ---
 
 ## A small terminal view of my work
@@ -216,6 +364,22 @@ I prefer measurable systems: benchmark retrieval separately, freeze generation w
 <p align="center">
   <img src="./assets/current-focus-terminal.svg" width="100%" alt="Animated live engineering focus terminal" />
 </p>
+
+<p align="center">
+  This is the compact version of how I currently think about production AI: <strong>preserve knowledge, retrieve useful evidence, govern agent behavior, retain the right context, and engineer for real failure modes</strong>.
+</p>
+
+<details>
+<summary><strong>Decode the engineering log</strong></summary>
+<br>
+
+- **[graph]** — preserve identity, evidence, relationships, provenance, and historical context instead of flattening everything into text.
+- **[rag]** — retrieve and rank the right context before asking the model to reason.
+- **[agents]** — give agents the correct tools, permissions, policies, and execution scope.
+- **[memory]** — retain useful context while distinguishing persistent information from temporary or one-time instructions.
+- **[prod]** — expect timeouts, payload limits, stale state, partial dependencies, retries, and observability requirements from the beginning.
+
+</details>
 
 ---
 

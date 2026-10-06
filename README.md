@@ -30,17 +30,13 @@
 
 ## About me
 
-I like working on the parts of AI systems that sit **between a good model demo and a reliable product**: retrieval quality, graph structure, context, memory, safety, evaluation, latency, and failure handling.
+<p align="center">
+  <img src="./assets/about-me.svg" width="100%" alt="About Praveen Solanki" />
+</p>
 
-- Building **enterprise AI systems @ Simpplr**
-- Working across **Knowledge Graphs, GraphRAG, multi-agent systems, memory & personalization**
-- Interested in **AI guardrails, governed context, and production reliability**
-- M.Tech CSE - **IIT Mandi**
-- Previously worked on enterprise RAG at **Bosch Global Software Technologies**
-- I enjoy turning research ideas into systems that can actually be benchmarked, debugged, and operated
-
-> **Current engineering theme:**  
-> *How do we make AI systems retrieve the right context, reason over relationships, retain useful state, and still remain safe and reliable?*
+<p align="center">
+  I work on the engineering between a good AI demo and a reliable production system — retrieval, graphs, context, memory, safety, evaluation, and failure handling.
+</p>
 
 ---
 

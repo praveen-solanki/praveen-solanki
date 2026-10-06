@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Praveen Solanki — AI/ML Engineer</title>
+  <desc id="desc">Animated terminal-inspired banner for Praveen Solanki focused on Generative AI, RAG, Knowledge Graphs and Agentic Systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#101826"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#7ee787"/>
+      <stop offset="100%" stop-color="#a371f7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .cursor { animation: blink 1s steps(2,end) infinite; }
+      .scan { animation: scan 7s linear infinite; opacity:.10; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-origin:center; }
+      .pulse2 { animation: pulse 2.4s ease-in-out .8s infinite; transform-origin:center; }
+      .pulse3 { animation: pulse 2.4s ease-in-out 1.6s infinite; transform-origin:center; }
+      .flow { stroke-dasharray: 8 12; animation: dash 5s linear infinite; }
+      .fade1 { animation: fade 8s ease-in-out infinite; }
+      .fade2 { animation: fade 8s ease-in-out 2s infinite; opacity:.35; }
+      .fade3 { animation: fade 8s ease-in-out 4s infinite; opacity:.35; }
+      .fade4 { animation: fade 8s ease-in-out 6s infinite; opacity:.35; }
+      @keyframes blink { 50% { opacity:0; } }
+      @keyframes scan { from { transform:translateY(-60px);} to { transform:translateY(420px);} }
+      @keyframes pulse { 0%,100% { opacity:.35; } 50% { opacity:1; filter:url(#glow);} }
+      @keyframes dash { to { stroke-dashoffset:-120; } }
+      @keyframes fade { 0%,20% {opacity:1} 25%,100% {opacity:.35} }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="#30363d"/>
+
+  <g opacity=".16">
+    <path d="M0 82H1200M0 164H1200M0 246H1200M0 328H1200" stroke="#58a6ff" stroke-width=".6"/>
+    <path d="M120 0V360M360 0V360M600 0V360M840 0V360M1080 0V360" stroke="#58a6ff" stroke-width=".5"/>
+  </g>
+
+  <g class="scan">
+    <rect x="0" y="0" width="1200" height="44" fill="url(#accent)"/>
+  </g>
+
+  <g transform="translate(55 40)">
+    <circle cx="8" cy="8" r="6" fill="#ff7b72"/>
+    <circle cx="30" cy="8" r="6" fill="#f2cc60"/>
+    <circle cx="52" cy="8" r="6" fill="#7ee787"/>
+    <text x="80" y="14" class="mono" font-size="16" fill="#8b949e">~/praveen-solanki/profile</text>
+  </g>
+
+  <text x="58" y="115" class="mono" font-size="20" fill="#7ee787">$ whoami</text>
+  <text x="58" y="174" class="sans" font-size="48" font-weight="750" fill="#f0f6fc">PRAVEEN SOLANKI</text>
+  <rect x="58" y="191" width="520" height="4" rx="2" fill="url(#accent)"/>
+  <text x="58" y="230" class="mono" font-size="20" fill="#c9d1d9">AI/ML Engineer · Generative AI · RAG · Knowledge Graphs</text>
+  <text x="58" y="266" class="mono" font-size="18" fill="#8b949e">building systems that retrieve → reason → remember<tspan class="cursor" fill="#58a6ff">_</tspan></text>
+
+  <g transform="translate(720 78)" class="mono">
+    <path d="M64 86 L180 36 L296 86 L180 136 Z" fill="none" stroke="#58a6ff" stroke-width="2" class="flow"/>
+    <path d="M64 86 L180 194 L296 86" fill="none" stroke="#a371f7" stroke-width="2" class="flow"/>
+    <path d="M180 36 L180 194" fill="none" stroke="#7ee787" stroke-width="2" class="flow"/>
+    
+    <g class="pulse"><circle cx="64" cy="86" r="28" fill="#0d1117" stroke="#58a6ff" stroke-width="2"/><text x="64" y="92" text-anchor="middle" font-size="14" fill="#58a6ff">RAG</text></g>
+    <g class="pulse2"><circle cx="180" cy="36" r="31" fill="#0d1117" stroke="#7ee787" stroke-width="2"/><text x="180" y="42" text-anchor="middle" font-size="13" fill="#7ee787">GRAPH</text></g>
+    <g class="pulse3"><circle cx="296" cy="86" r="31" fill="#0d1117" stroke="#a371f7" stroke-width="2"/><text x="296" y="92" text-anchor="middle" font-size="13" fill="#a371f7">AGENT</text></g>
+    <g class="pulse2"><circle cx="180" cy="194" r="34" fill="#0d1117" stroke="#f2cc60" stroke-width="2"/><text x="180" y="200" text-anchor="middle" font-size="12" fill="#f2cc60">MEMORY</text></g>
+
+    <text x="38" y="262" font-size="13" fill="#8b949e" class="fade1">[01] retrieve evidence</text>
+    <text x="38" y="284" font-size="13" fill="#8b949e" class="fade2">[02] traverse context</text>
+    <text x="218" y="262" font-size="13" fill="#8b949e" class="fade3">[03] reason safely</text>
+    <text x="218" y="284" font-size="13" fill="#8b949e" class="fade4">[04] retain signal</text>
+  </g>
+</svg>

@@ -71,7 +71,7 @@
 ## Engineering @ Simpplr
 
 <p align="center">
-  <img src="./assets/simpplr-engineering.svg" width="100%" alt="Engineering at Simpplr — animated enterprise AI flow" />
+  <img src="./assets/simpplr-engineering-v2.svg" width="100%" alt="Engineering at Simpplr — animated enterprise AI flow" />
 </p>
 
 <p align="center">
@@ -206,7 +206,7 @@ I prefer measurable systems: benchmark retrieval separately, freeze generation w
 ## Experience & education
 
 <p align="center">
-  <img src="./assets/experience-timeline.svg" width="100%" alt="Animated experience and education timeline" />
+  <img src="./assets/experience-timeline-v2.svg" width="100%" alt="Animated experience and education timeline" />
 </p>
 
 ---

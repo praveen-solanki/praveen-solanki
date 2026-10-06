@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="How I think about AI engineering">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+<linearGradient id="g" x1="0" x2="1"><stop stop-color="#58a6ff"/><stop offset=".35" stop-color="#7ee787"/><stop offset=".7" stop-color="#a371f7"/><stop offset="1" stop-color="#f2cc60"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+.s{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+@keyframes dash{to{stroke-dashoffset:-180}} @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1;filter:url(#glow)}} @keyframes flowL{from{transform:translateX(0)}to{transform:translateX(-620px)}} @keyframes flowR{from{transform:translateX(-620px)}to{transform:translateX(0)}} @keyframes wave{0%,100%{transform:translateY(0)}25%{transform:translateY(-12px)}75%{transform:translateY(12px)}} @keyframes fade{0%,20%{opacity:.25}35%,60%{opacity:1}75%,100%{opacity:.25}} @keyframes blink{50%{opacity:0}} @keyframes reveal{0%,15%{opacity:0}25%,100%{opacity:1}}
+</style>
+</defs>
+<rect width="1200" height="420" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#30363d"/>
+
+<text x="58" y="66" class="s" font-size="30" font-weight="760" fill="#f0f6fc">HOW I THINK ABOUT AI ENGINEERING</text>
+<text x="58" y="99" class="m" font-size="14" fill="#8b949e">four principles · one production signal</text>
+<path d="M70 245 C135 190 180 300 245 245 S355 190 420 245 S530 300 595 245 S705 190 770 245 S880 300 945 245 S1055 190 1130 245" fill="none" stroke="url(#g)" stroke-width="3" stroke-dasharray="10 13" style="animation:dash 5s linear infinite"/>
+<g>
+ <circle cx="185" cy="245" r="18" fill="#0d1117" stroke="#58a6ff" style="animation:pulse 4s infinite"/>
+ <circle cx="465" cy="245" r="18" fill="#0d1117" stroke="#7ee787" style="animation:pulse 4s 1s infinite"/>
+ <circle cx="745" cy="245" r="18" fill="#0d1117" stroke="#a371f7" style="animation:pulse 4s 2s infinite"/>
+ <circle cx="1025" cy="245" r="18" fill="#0d1117" stroke="#f2cc60" style="animation:pulse 4s 3s infinite"/>
+</g>
+<g class="s">
+ <text x="185" y="170" text-anchor="middle" font-size="17" font-weight="700" fill="#f0f6fc">Retrieve first</text><text x="185" y="194" text-anchor="middle" font-size="13" fill="#8b949e">evidence before generation</text>
+ <text x="465" y="318" text-anchor="middle" font-size="17" font-weight="700" fill="#f0f6fc">Structure context</text><text x="465" y="342" text-anchor="middle" font-size="13" fill="#8b949e">scope · relations · history</text>
+ <text x="745" y="170" text-anchor="middle" font-size="17" font-weight="700" fill="#f0f6fc">Fail well</text><text x="745" y="194" text-anchor="middle" font-size="13" fill="#8b949e">limits · retries · observability</text>
+ <text x="1025" y="318" text-anchor="middle" font-size="17" font-weight="700" fill="#f0f6fc">Measure it</text><text x="1025" y="342" text-anchor="middle" font-size="13" fill="#8b949e">benchmark · compare · reproduce</text>
+</g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Engineering at Simpplr">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+<linearGradient id="g" x1="0" x2="1"><stop stop-color="#58a6ff"/><stop offset=".35" stop-color="#7ee787"/><stop offset=".7" stop-color="#a371f7"/><stop offset="1" stop-color="#f2cc60"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<style>
+.s{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+@keyframes dash{to{stroke-dashoffset:-180}} @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1;filter:url(#glow)}} @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}} @keyframes fade{0%,20%{opacity:.25}35%,60%{opacity:1}75%,100%{opacity:.25}} @keyframes sweep{from{transform:translateX(-400px)}to{transform:translateX(1600px)}} @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-620px)}} @keyframes blink{50%{opacity:0}}
+</style>
+</defs>
+<rect width="1200" height="420" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#30363d"/>
+
+<text x="58" y="66" class="s" font-size="30" font-weight="760" fill="#f0f6fc">ENGINEERING @ SIMPPLR</text>
+<text x="58" y="99" class="m" font-size="14" fill="#8b949e">private enterprise AI systems — public-safe engineering summary</text>
+<g transform="translate(70 150)">
+ <rect x="0" y="0" width="230" height="150" rx="18" fill="#0d1117" stroke="#58a6ff"/><text x="22" y="34" class="m" font-size="12" fill="#58a6ff">01 / GRAPH</text><text x="22" y="70" class="s" font-size="18" font-weight="700" fill="#f0f6fc">Knowledge Graph</text><text x="22" y="96" class="s" font-size="14" fill="#c9d1d9">canonicalization · identity</text><text x="22" y="120" class="s" font-size="14" fill="#8b949e">cross-graph retrieval</text>
+ <rect x="280" y="0" width="230" height="150" rx="18" fill="#0d1117" stroke="#7ee787"/><text x="302" y="34" class="m" font-size="12" fill="#7ee787">02 / AGENTS</text><text x="302" y="70" class="s" font-size="18" font-weight="700" fill="#f0f6fc">Safety & Policy</text><text x="302" y="96" class="s" font-size="14" fill="#c9d1d9">tenant guardrails · Redis</text><text x="302" y="120" class="s" font-size="14" fill="#8b949e">agent-scoped controls</text>
+ <rect x="560" y="0" width="230" height="150" rx="18" fill="#0d1117" stroke="#a371f7"/><text x="582" y="34" class="m" font-size="12" fill="#a371f7">03 / MEMORY</text><text x="582" y="70" class="s" font-size="18" font-weight="700" fill="#f0f6fc">Personalization</text><text x="582" y="96" class="s" font-size="14" fill="#c9d1d9">scope · reconcile · auth</text><text x="582" y="120" class="s" font-size="14" fill="#8b949e">provenance · lifecycle</text>
+ <rect x="840" y="0" width="230" height="150" rx="18" fill="#0d1117" stroke="#f2cc60"/><text x="862" y="34" class="m" font-size="12" fill="#f2cc60">04 / PROD</text><text x="862" y="70" class="s" font-size="18" font-weight="700" fill="#f0f6fc">Reliability</text><text x="862" y="96" class="s" font-size="14" fill="#c9d1d9">batching · checkpoints</text><text x="862" y="120" class="s" font-size="14" fill="#8b949e">Kafka · WebSockets</text>
+ <path d="M230 75H280 M510 75H560 M790 75H840" stroke="url(#g)" stroke-width="3" stroke-dasharray="8 12" style="animation:dash 3.5s linear infinite"/>
+ <circle cx="255" cy="75" r="5" fill="#58a6ff" style="animation:pulse 2s infinite"/><circle cx="535" cy="75" r="5" fill="#7ee787" style="animation:pulse 2s .5s infinite"/><circle cx="815" cy="75" r="5" fill="#a371f7" style="animation:pulse 2s 1s infinite"/>
+</g>
+<text x="600" y="354" text-anchor="middle" class="m" font-size="14" fill="#8b949e">ingest → resolve → retrieve → govern → deliver</text>
+<rect x="-250" y="0" width="140" height="420" transform="skewX(-18)" fill="url(#g)" opacity=".07" style="animation:sweep 8s linear infinite"/>
+</svg>

@@ -42,128 +42,97 @@
 
 ## What I build
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<p align="center">
+  <img src="./assets/what-i-build.svg" width="100%" alt="What I build — animated AI systems map" />
+</p>
 
-### Knowledge & Context Systems
+<details>
+<summary><strong>Explore the systems behind the orbit</strong></summary>
+<br>
 
+**Knowledge & Context Systems**
 - Knowledge Graph construction
 - Entity / identity resolution
 - GraphRAG & multi-hop retrieval
 - Context & memory architectures
 - Temporal and scoped personalization
 
-</td>
-<td width="50%" valign="top">
-
-### Agentic & LLM Systems
-
+**Agentic & LLM Systems**
 - Multi-agent orchestration
 - RAG pipelines & evaluation
 - Dynamic guardrails / policies
 - LLM routing & inference
 - Failure-aware production workflows
 
-</td>
-</tr>
-</table>
+</details>
 
 ---
 
 ## Engineering @ Simpplr
 
-I contribute to private enterprise AI systems, so the code itself is not public. The engineering themes below are a public-safe summary of the work.
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Knowledge Graph & GraphRAG
-Built and improved systems around **entity canonicalization, person resolution, incremental ingestion, cross-graph ranking, relationship enrichment, and multi-hop retrieval**.
-
-### Memory & Personalization
-Worked on **scoped memory, reconciliation, authorization, provenance, lifecycle decisions, and tenant-aware model routing**.
-
-</td>
-<td width="50%" valign="top">
-
-### Agent Safety Infrastructure
-Implemented **tenant-aware guardrails, Redis-backed policy retrieval, agent-specific policy application, and modular prompt-policy composition**.
-
-### Production Reliability
-Improved **checkpointing, concurrency, large payload delivery, Kafka/WebSocket observability, batching, fallbacks, and graceful degradation**.
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="./assets/simpplr-engineering.svg" width="100%" alt="Engineering at Simpplr — animated enterprise AI flow" />
+</p>
 
 <p align="center">
-  <a href="./docs/engineering-at-simpplr.md"><strong>Read the detailed engineering summary -></strong></a>
+  I contribute to private enterprise AI systems; this is a public-safe summary of the engineering themes.
 </p>
+
+<details>
+<summary><strong>Open engineering highlights</strong></summary>
+<br>
+
+**Knowledge Graph & GraphRAG** — entity canonicalization, person resolution, incremental ingestion, cross-graph ranking, relationship enrichment, and multi-hop retrieval.
+
+**Agent Safety Infrastructure** — tenant-aware guardrails, Redis-backed policy retrieval, agent-specific policy application, and modular prompt-policy composition.
+
+**Memory & Personalization** — scoped memory, reconciliation, authorization, provenance, lifecycle decisions, and tenant-aware model routing.
+
+**Production Reliability** — checkpointing, concurrency, large-payload delivery, Kafka/WebSocket observability, batching, fallbacks, and graceful degradation.
+
+<p align="center">
+  <a href="./docs/engineering-at-simpplr.md"><strong>Read the detailed engineering summary →</strong></a>
+</p>
+
+</details>
 
 ---
 
 ## Flagship projects
 
-### 01 / AgenticMindGraph.ai
-**Autonomous research intelligence over technical specifications using Knowledge Graphs + agentic reasoning.**
+<p align="center">
+  <img src="./assets/flagship-projects.svg" width="100%" alt="Flagship projects — animated project spotlight" />
+</p>
 
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://github.com/praveen-solanki/AgenticMindGraph.ai"><strong>AgenticMindGraph.ai</strong></a><br><sub>Graph + Agentic Reasoning</sub></td>
+<td align="center" width="25%"><a href="https://github.com/praveen-solanki/RAG-Full-Pipeline"><strong>RAG Full Pipeline</strong></a><br><sub>Hybrid vs Vectorless RAG</sub></td>
+<td align="center" width="25%"><a href="https://github.com/praveen-solanki/ADAS-Perception-Pipeline"><strong>ADAS Perception</strong></a><br><sub>Real-time Computer Vision</sub></td>
+<td align="center" width="25%"><a href="https://github.com/praveen-solanki/TestForge.ai-Automated-Test-Generation-Requirements-Traceability-System"><strong>TestForge.ai</strong></a><br><sub>Requirements ↔ Code Graph</sub></td>
+</tr>
+</table>
+
+<details>
+<summary><strong>Open project evidence & metrics</strong></summary>
+<br>
+
+**01 / AgenticMindGraph.ai**  
+Autonomous research intelligence over technical specifications using Knowledge Graphs + agentic reasoning.  
 `Knowledge Graphs` · `Neo4j` · `LLMs` · `Multi-Agent Systems` · `vLLM` · `BGE-M3`
 
-Transforms complex technical PDFs into a structured knowledge graph and runs specialized agents for **reasoning, conflict detection, evolution tracking, synthesis, and system monitoring**.
+**02 / RAG Full Pipeline**  
+End-to-end AUTOSAR intelligence system comparing Hybrid Vector RAG vs Vectorless hierarchical retrieval.  
+103 specification PDFs · 4,500+ pages · 1,000+ validated QA pairs · shared generation/evaluation pipeline.
 
-**Why it matters:** it combines graph construction, knowledge evolution, agent orchestration, and evaluation in one end-to-end system.
+**03 / ADAS Perception Pipeline**  
+Real-time multi-model perception for vehicles, pedestrians, traffic signs, and traffic-light state.  
+**185.5 FPS** ONNX Runtime GPU · **mAP@0.5 = 0.554** · **97.82%** GTSRB sign classification accuracy.
 
-[Explore AgenticMindGraph.ai ->](https://github.com/praveen-solanki/AgenticMindGraph.ai)
+**04 / TestForge.ai / Unified Knowledge Graph**  
+Graph-based requirements-to-code traceability with coverage analysis, semantic drift detection, natural-language-to-Cypher querying, and code-change impact analysis.
 
----
-
-### 02 / RAG Full Pipeline
-**End-to-end AUTOSAR intelligence system comparing Hybrid Vector RAG vs Vectorless hierarchical retrieval.**
-
-`BGE-M3` · `Qdrant` · `RRF` · `RAGAS` · `RAGChecker` · `vLMM`
-
-- 103 AUTOSAR specification PDFs
-- 4,500+ pages
-- 1,000+ validated QA pairs
-- Hybrid vector retrieval + hierarchical vectorless retrieval
-- Shared generation/evaluation pipeline for fair comparison
-
-**Why it matters:** this is not only a RAG demo - it includes **dataset construction, retrieval benchmarking, generation, evaluation, and reproducibility**.
-
-[Explore RAG-Full-Pipeline ->](https://github.com/praveen-solanki/RAG-Full-Pipeline)
-
----
-
-### 03 / ADAS Perception Pipeline
-**Real-time multi-model perception for vehicles, pedestrians, traffic signs, and traffic-light state.**
-
-`YOLO11m` · `ResNet-18` · `OpenCV` · `ONNX Runtime` · `BDD100K`
-
-- **185.5 FPS** ONNX Runtime GPU benchmark
-- **mAP@0.5 = 0.554** on BDD100K evaluation
-- **97.82%** GTSRB traffic-sign classification accuracy
-- Reproducible backend and threshold benchmarking
-
-[Explore ADAS-Perception-Pipeline ->](https://github.com/praveen-solanki/ADAS-Perception-Pipeline)
-
----
-
-### 04 / TestForge.ai / Unified Knowledge Graph
-**Graph-based requirements-to-code traceability and software impact analysis.**
-
-`Neo4j` · `FastAPI` · `React` · `vLLM` · `Tree-sitter` · `Embeddings`
-
-Maps technical specifications to implementation details and supports:
-- requirement coverage
-- semantic drift detection
-- ghost/unimplemented requirement discovery
-- natural-language-to-Cypher querying
-- code-change impact analysis
-- interactive 3D graph exploration
-
-[Explore TestForge.ai ->](https://github.com/praveen-solanki/TestForge.ai-Automated-Test-Generation-Requirements-Traceability-System)
+</details>
 
 ---
 
@@ -183,56 +152,51 @@ Maps technical specifications to implementation details and supports:
 ## Toolbox
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi,docker,redis,mongodb,elasticsearch,kafka,git,linux,opencv&perline=12" alt="Core tools" />
+  <img src="./assets/toolbox.svg" width="100%" alt="Animated AI engineering toolbox" />
 </p>
 
-<table>
-<tr>
-<td><strong>Generative AI</strong></td>
-<td>LLMs · RAG · GraphRAG · Agentic AI · Embeddings · Prompt Engineering · Evaluation</td>
-</tr>
-<tr>
-<td><strong>Graph & Retrieval</strong></td>
-<td>Neo4j · Qdrant · Elasticsearch · Entity Resolution · Multi-hop Retrieval · Hybrid Search</td>
-</tr>
-<tr>
-<td><strong>LLM Infrastructure</strong></td>
-<td>vLSM · OpenAI-compatible APIs · Redis · Model Routing · Concurrency / Throttling</td>
-</tr>
-<tr>
-<td><strong>Deep Learning / CV</strong></td>
-<td>PyTorch · TensorFlow · Transformers · YOLO · OpenCV · ONNX Runtime</td>
-</tr>
-<tr>
-<td><strong>Backend / Systems</strong></td>
-<td>Python · FastAPI · MongoDB · Kafka · WebSockets · Docker · Linux</td>
-</tr>
-</table>
+<details>
+<summary><strong>Open the stack by category</strong></summary>
+<br>
+
+| Area | Stack |
+|---|---|
+| **Generative AI** | LLMs · RAG · GraphRAG · Agentic AI · Embeddings · Prompt Engineering · Evaluation |
+| **Graph & Retrieval** | Neo4j · Qdrant · Elasticsearch · Entity Resolution · Multi-hop Retrieval · Hybrid Search |
+| **LLM Infrastructure** | vLLM · OpenAI-compatible APIs · Redis · Model Routing · Concurrency / Throttling |
+| **Deep Learning / CV** | PyTorch · TensorFlow · Transformers · YOLO · OpenCV · ONNX Runtime |
+| **Backend / Systems** | Python · FastAPI · MongoDB · Kafka · WebSockets · Docker · Linux |
+
+</details>
 
 ---
 
 ## How I think about AI engineering
 
-<details open>
-<summary><strong>01 - Retrieval before generation</strong></summary>
+<p align="center">
+  <img src="./assets/engineering-thinking.svg" width="100%" alt="Animated AI engineering principles waveform" />
+</p>
+
+<details>
+<summary><strong>01 — Retrieval before generation</strong></summary>
 <br>
 A strong model cannot compensate for consistently weak evidence. I care about ranking, freshness, entity identity, graph traversal, provenance, and context selection before the answer reaches the LLM.
 </details>
 
 <details>
-<summary><strong>02 - Context needs structure</strong></summary>
+<summary><strong>02 — Context needs structure</strong></summary>
 <br>
 Flat memory and top-k retrieval are useful, but many enterprise problems need scope, relationships, validity, lifecycle, and history. That is where graphs and governed context become valuable.
 </details>
 
 <details>
-<summary><strong>03 - Production AI must fail well</strong></summary>
+<summary><strong>03 — Production AI must fail well</strong></summary>
 <br>
-Timeouts, model truncation, oversized payloads, stale caches, unavailable stores, partial evidence, and rate limits are part of the system - not edge cases to ignore.
+Timeouts, model truncation, oversized payloads, stale caches, unavailable stores, partial evidence, and rate limits are part of the system — not edge cases to ignore.
 </details>
 
 <details>
-<summary><strong>04 - Evaluation is part of the product</strong></summary>
+<summary><strong>04 — Evaluation is part of the product</strong></summary>
 <br>
 I prefer measurable systems: benchmark retrieval separately, freeze generation when comparing retrievers, document failure cases, and make important results reproducible.
 </details>
@@ -241,34 +205,17 @@ I prefer measurable systems: benchmark retrieval separately, freeze generation w
 
 ## Experience & education
 
-```text
-2026 - now   Simpplr
-             Associate Data Scientist / AI-ML Engineering
-             Enterprise AI · Knowledge Graphs · Retrieval · Agents · Memory
-
-2026         Bosch Global Software Technologies
-             Applied AI / Enterprise RAG
-             AUTOSAR · Hybrid Retrieval · RAG Evaluation
-
-2024 - 2026 IIT Mandi
-             M.Tech - Computer Science & Engineering
-```
+<p align="center">
+  <img src="./assets/experience-timeline.svg" width="100%" alt="Animated experience and education timeline" />
+</p>
 
 ---
 
 ## A small terminal view of my work
 
-```text
-praveen@ai-systems:~$ current_focus
-
-[graph]   preserve identity, evidence, relationships, provenance
-[rag]     retrieve the right context before asking the model to reason
-[agents]  apply the right tools + policies at the right execution scope
-[memory]  retain useful context without turning every statement permanent
-[prod]    design for retries, limits, partial failure, observability
-
-status: building.
-```
+<p align="center">
+  <img src="./assets/current-focus-terminal.svg" width="100%" alt="Animated live engineering focus terminal" />
+</p>
 
 ---
 
